@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>What Can JavaScript Do?</h2>
+
+<p id="demo" class="hidi">JavaScript can hide HTML elements.</p>
+
+<button type="button" onclick="abc();">Magic</button>
+
+
+
+<script>
+
+
+function abc(){
+var ele =document.getElementById('demo');
+if (ele.classList.contains('hidi')){
+ele.style.visibility='hidden';
+ele.classList.add("visi");
+ele.classList.remove("hidi");
+}
+else{
+ele.style.visibility='visible';
+ele.classList.add("hidi");
+ele.classList.remove("visi");
+}
+}
+
+
+
+</script>
+
+
+</body>
+</html> 
